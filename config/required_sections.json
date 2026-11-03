@@ -1,0 +1,44 @@
+{
+  "_comment": "Required sections per document type. A document picks a profile from 'doc_type' in its front matter, or from the 'match' file patterns. A heading satisfies a requirement if it contains any alias as a whole word.",
+  "default": {
+    "require_h1": true,
+    "required": []
+  },
+  "profiles": {
+    "readme": {
+      "match": ["README.md", "README*.md"],
+      "required": [
+        {"name": "Overview", "aliases": ["overview", "introduction", "about", "description", "what is"], "severity": "warning"},
+        {"name": "Installation", "aliases": ["installation", "install", "getting started", "setup", "quick start", "quickstart"], "severity": "warning"},
+        {"name": "Usage", "aliases": ["usage", "quick start", "quickstart", "examples", "example", "how to use"], "severity": "warning"},
+        {"name": "Contributing", "aliases": ["contributing", "contribution", "development"], "severity": "info"},
+        {"name": "License", "aliases": ["license", "licence"], "severity": "info"}
+      ]
+    },
+    "tutorial": {
+      "match": ["*/tutorials/*.md", "tutorial*.md"],
+      "required": [
+        {"name": "Prerequisites", "aliases": ["prerequisites", "requirements", "before you begin"], "severity": "warning"},
+        {"name": "Steps", "aliases": ["steps", "walkthrough", "instructions", "setup", "procedure"], "severity": "warning"},
+        {"name": "Next steps", "aliases": ["next steps", "what next", "summary", "conclusion"], "severity": "info"}
+      ]
+    },
+    "api": {
+      "match": ["api*.md", "*/api/*.md", "reference*.md"],
+      "required": [
+        {"name": "Overview", "aliases": ["overview", "introduction"], "severity": "warning"},
+        {"name": "Authentication", "aliases": ["authentication", "authorization", "auth"], "severity": "warning"},
+        {"name": "Endpoints", "aliases": ["endpoints", "reference", "methods", "operations"], "severity": "warning"},
+        {"name": "Errors", "aliases": ["errors", "error handling", "error codes", "status codes"], "severity": "warning"}
+      ]
+    },
+    "runbook": {
+      "match": ["*/runbooks/*.md", "runbook*.md"],
+      "required": [
+        {"name": "Symptoms", "aliases": ["symptoms", "alerts", "signals"], "severity": "warning"},
+        {"name": "Mitigation", "aliases": ["mitigation", "resolution", "fix", "steps"], "severity": "warning"},
+        {"name": "Escalation", "aliases": ["escalation", "contacts", "on call"], "severity": "info"}
+      ]
+    }
+  }
+}

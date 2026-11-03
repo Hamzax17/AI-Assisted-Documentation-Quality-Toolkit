@@ -1,0 +1,23 @@
+{
+  "_comment": "Preferred terminology. 'avoid' lists wrong or inconsistent forms. Matching skips code, URLs and file names.",
+  "terms": [
+    {"preferred": "GitHub", "avoid": ["Github", "github", "Git Hub"], "note": "official capitalisation"},
+    {"preferred": "JavaScript", "avoid": ["Javascript", "javascript", "Java Script"]},
+    {"preferred": "TypeScript", "avoid": ["Typescript", "typescript"]},
+    {"preferred": "Node.js", "avoid": ["NodeJS", "Nodejs", "node.js"]},
+    {"preferred": "PostgreSQL", "avoid": ["Postgresql", "PostGreSQL", "PostgresSQL"]},
+    {"preferred": "Python", "avoid": ["python"], "note": "the language name is capitalised in prose"},
+    {"preferred": "JSON", "avoid": ["Json", "json"]},
+    {"preferred": "YAML", "avoid": ["Yaml", "yaml"]},
+    {"preferred": "OAuth", "avoid": ["Oauth", "oauth"]},
+    {"preferred": "macOS", "avoid": ["MacOS", "Mac OS", "Macos"]},
+    {"preferred": "VS Code", "avoid": ["VSCode", "Vscode", "VScode"]},
+    {"preferred": "Kubernetes", "avoid": ["kubernetes"]},
+    {"preferred": "email", "avoid": ["e-mail", "E-mail"], "note": "one word, no hyphen"},
+    {"preferred": "website", "avoid": ["web site", "web-site", "Web site"]},
+    {"preferred": "username", "avoid": ["user name", "user-name"]},
+    {"preferred": "dataset", "avoid": ["data set", "data-set"]},
+    {"preferred": "API key", "avoid": ["api key", "Api key", "API-key"]},
+    {"preferred": "URL", "avoid": ["Url"]}
+  ]
+}

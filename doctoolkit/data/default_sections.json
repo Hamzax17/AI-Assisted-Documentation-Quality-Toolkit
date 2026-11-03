@@ -1,0 +1,39 @@
+{
+  "require_h1": true,
+  "min_words": 30,
+  "default": {"required": [], "recommended": []},
+  "profiles": {
+    "readme": {
+      "match": ["README.md", "README.markdown", "readme.md"],
+      "required": [
+        ["Installation", "Install", "Getting started", "Setup"],
+        ["Usage", "Quick start", "Quickstart", "Examples"],
+        ["License"]
+      ],
+      "recommended": [["Contributing"], ["Features", "Overview"]]
+    },
+    "api": {
+      "match": ["api*.md", "api/*.md", "reference/*.md"],
+      "required": [
+        ["Overview", "Introduction"],
+        ["Parameters", "Arguments", "Request"],
+        ["Returns", "Response", "Responses"],
+        ["Examples", "Example"]
+      ],
+      "recommended": [["Errors", "Error handling", "Error codes"]]
+    },
+    "tutorial": {
+      "match": ["tutorial*.md", "tutorials/*.md", "guides/*.md", "how-to*.md"],
+      "required": [["Prerequisites", "Requirements", "Before you begin"]],
+      "recommended": [["Troubleshooting"], ["Next steps", "What's next", "Summary"]]
+    },
+    "contributing": {
+      "match": ["CONTRIBUTING.md"],
+      "required": [
+        ["Getting started", "Setup", "Development"],
+        ["Pull request", "Pull requests", "Submitting changes"]
+      ],
+      "recommended": [["Code of conduct"]]
+    }
+  }
+}

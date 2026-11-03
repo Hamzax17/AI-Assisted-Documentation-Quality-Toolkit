@@ -1,0 +1,15 @@
+{
+  "terms": [
+    {"preferred": "GitHub", "avoid": ["Github", "github", "Git Hub"]},
+    {"preferred": "JavaScript", "avoid": ["Javascript", "java script", "Java Script"]},
+    {"preferred": "Node.js", "avoid": ["NodeJS", "Nodejs", "node.js", "node js"]},
+    {"preferred": "Python", "avoid": ["python"]},
+    {"preferred": "Markdown", "avoid": ["markdown"]},
+    {"preferred": "API", "avoid": ["Api", "api"]},
+    {"preferred": "JSON", "avoid": ["Json", "json"]},
+    {"preferred": "email", "avoid": ["e-mail"]},
+    {"preferred": "username", "avoid": ["user name", "user-name"]},
+    {"preferred": "website", "avoid": ["web site", "web-site"]},
+    {"preferred": "sign in", "avoid": ["log in", "log-in"], "note": "Use \"sign in\" as the verb."}
+  ]
+}

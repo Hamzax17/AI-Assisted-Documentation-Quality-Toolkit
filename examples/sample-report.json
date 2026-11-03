@@ -1,0 +1,520 @@
+{
+  "tool": "doc-quality-toolkit",
+  "version": "0.1.0",
+  "generated_at": "2026-11-03T20:50:38+00:00",
+  "options": {
+    "external_links": false,
+    "rewrite": true,
+    "max_sentence_words": 30,
+    "disabled_rules": []
+  },
+  "summary": {
+    "files": 3,
+    "words": 203,
+    "issues": 35,
+    "by_severity": {
+      "error": 5,
+      "warning": 16,
+      "info": 14
+    },
+    "by_check": {
+      "sections": 5,
+      "terminology": 8,
+      "style": 17,
+      "links": 5
+    },
+    "by_rule": {
+      "inconsistent-term": 8,
+      "passive-voice": 7,
+      "missing-section": 4,
+      "weasel-word": 2,
+      "wordy-phrase": 2,
+      "broken-anchor": 2,
+      "broken-link": 2,
+      "long-sentence": 1,
+      "generic-link-text": 1,
+      "empty-section": 1,
+      "placeholder-text": 1,
+      "repeated-word": 1,
+      "code-fence-language": 1,
+      "missing-alt-text": 1,
+      "undefined-reference": 1
+    },
+    "average_score": 78.7
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "words": 100,
+      "score": 69.5,
+      "counts": {
+        "error": 2,
+        "warning": 8,
+        "info": 9
+      },
+      "issues": [
+        {
+          "check": "sections",
+          "rule": "missing-section",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 1,
+          "message": "Missing required section (readme profile): \"License\".",
+          "suggestion": "Add a \"## License\" section."
+        },
+        {
+          "check": "sections",
+          "rule": "missing-section",
+          "severity": "info",
+          "file": "README.md",
+          "line": 1,
+          "message": "Missing recommended section (readme profile): \"Features\", \"Overview\".",
+          "suggestion": "Add a \"## Features\" section."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 3,
+          "message": "Use \"GitHub\" instead of \"Github\".",
+          "suggestion": "Replace with \"GitHub\"."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "README.md",
+          "line": 3,
+          "message": "Possible passive voice: \"is used\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "README.md",
+          "line": 3,
+          "message": "Possible passive voice: \"is hosted\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "style",
+          "rule": "weasel-word",
+          "severity": "info",
+          "file": "README.md",
+          "line": 3,
+          "message": "Vague intensifier \"really\".",
+          "suggestion": "Remove it or be specific."
+        },
+        {
+          "check": "style",
+          "rule": "wordy-phrase",
+          "severity": "info",
+          "file": "README.md",
+          "line": 3,
+          "message": "Wordy phrase \"in order to\".",
+          "suggestion": "Use \"to\"."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 7,
+          "message": "Use \"JavaScript\" instead of \"Javascript\".",
+          "suggestion": "Replace with \"JavaScript\"."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 7,
+          "message": "Use \"Python\" instead of \"python\".",
+          "suggestion": "Replace with \"Python\"."
+        },
+        {
+          "check": "style",
+          "rule": "long-sentence",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 7,
+          "message": "Sentence has 37 words (limit 30).",
+          "suggestion": "Split it into two sentences."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "README.md",
+          "line": 7,
+          "message": "Possible passive voice: \"be configured\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "README.md",
+          "line": 7,
+          "message": "Possible passive voice: \"is made\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "style",
+          "rule": "weasel-word",
+          "severity": "info",
+          "file": "README.md",
+          "line": 7,
+          "message": "Vague intensifier \"very\".",
+          "suggestion": "Remove it or be specific."
+        },
+        {
+          "check": "style",
+          "rule": "wordy-phrase",
+          "severity": "info",
+          "file": "README.md",
+          "line": 7,
+          "message": "Wordy phrase \"utilize\".",
+          "suggestion": "Use \"use\"."
+        },
+        {
+          "check": "links",
+          "rule": "broken-anchor",
+          "severity": "error",
+          "file": "README.md",
+          "line": 11,
+          "message": "Anchor #setup-steps not found in guide.md.",
+          "suggestion": "Did you mean #setup?"
+        },
+        {
+          "check": "links",
+          "rule": "broken-link",
+          "severity": "error",
+          "file": "README.md",
+          "line": 11,
+          "message": "Link target not found: missing-file.md",
+          "suggestion": null
+        },
+        {
+          "check": "style",
+          "rule": "generic-link-text",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 11,
+          "message": "Non-descriptive link text \"click here\".",
+          "suggestion": "Say where the link goes."
+        },
+        {
+          "check": "sections",
+          "rule": "empty-section",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 13,
+          "message": "Section \"Configuration\" is empty.",
+          "suggestion": "Write the section or remove the heading."
+        },
+        {
+          "check": "style",
+          "rule": "placeholder-text",
+          "severity": "warning",
+          "file": "README.md",
+          "line": 17,
+          "message": "Placeholder text left in the document: \"TODO\".",
+          "suggestion": "Finish or remove it."
+        }
+      ]
+    },
+    {
+      "file": "api.md",
+      "words": 33,
+      "score": 93.0,
+      "counts": {
+        "error": 0,
+        "warning": 3,
+        "info": 2
+      },
+      "issues": [
+        {
+          "check": "sections",
+          "rule": "missing-section",
+          "severity": "warning",
+          "file": "api.md",
+          "line": 1,
+          "message": "Missing required section (api profile): \"Examples\", \"Example\".",
+          "suggestion": "Add a \"## Examples\" section."
+        },
+        {
+          "check": "sections",
+          "rule": "missing-section",
+          "severity": "info",
+          "file": "api.md",
+          "line": 1,
+          "message": "Missing recommended section (api profile): \"Errors\", \"Error handling\", \"Error codes\".",
+          "suggestion": "Add a \"## Errors\" section."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "api.md",
+          "line": 5,
+          "message": "Use \"API\" instead of \"api\".",
+          "suggestion": "Replace with \"API\"."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "api.md",
+          "line": 5,
+          "message": "Use \"JSON\" instead of \"Json\".",
+          "suggestion": "Replace with \"JSON\"."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "api.md",
+          "line": 15,
+          "message": "Possible passive voice: \"is returned\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        }
+      ]
+    },
+    {
+      "file": "guide.md",
+      "words": 70,
+      "score": 73.5,
+      "counts": {
+        "error": 3,
+        "warning": 5,
+        "info": 3
+      },
+      "issues": [
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "guide.md",
+          "line": 7,
+          "message": "Use \"email\" instead of \"e-mail\".",
+          "suggestion": "Replace with \"email\"."
+        },
+        {
+          "check": "style",
+          "rule": "repeated-word",
+          "severity": "warning",
+          "file": "guide.md",
+          "line": 7,
+          "message": "Repeated word \"the\".",
+          "suggestion": "Remove one \"the\"."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "guide.md",
+          "line": 7,
+          "message": "Possible passive voice: \"are stored\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "guide.md",
+          "line": 11,
+          "message": "Use \"username\" instead of \"user name\".",
+          "suggestion": "Replace with \"username\"."
+        },
+        {
+          "check": "terminology",
+          "rule": "inconsistent-term",
+          "severity": "warning",
+          "file": "guide.md",
+          "line": 11,
+          "message": "Use \"sign in\" instead of \"log in\". Use \"sign in\" as the verb.",
+          "suggestion": "Replace with \"sign in\"."
+        },
+        {
+          "check": "style",
+          "rule": "passive-voice",
+          "severity": "info",
+          "file": "guide.md",
+          "line": 11,
+          "message": "Possible passive voice: \"is generated\".",
+          "suggestion": "Prefer an active construction with a clear actor."
+        },
+        {
+          "check": "style",
+          "rule": "code-fence-language",
+          "severity": "info",
+          "file": "guide.md",
+          "line": 19,
+          "message": "Code block has no language.",
+          "suggestion": "Add a language (e.g. ```python) for highlighting."
+        },
+        {
+          "check": "links",
+          "rule": "broken-link",
+          "severity": "error",
+          "file": "guide.md",
+          "line": 23,
+          "message": "Link target not found: images/diagram.png",
+          "suggestion": null
+        },
+        {
+          "check": "style",
+          "rule": "missing-alt-text",
+          "severity": "warning",
+          "file": "guide.md",
+          "line": 23,
+          "message": "Image images/diagram.png has no alt text.",
+          "suggestion": "Describe the image for screen readers."
+        },
+        {
+          "check": "links",
+          "rule": "broken-anchor",
+          "severity": "error",
+          "file": "guide.md",
+          "line": 25,
+          "message": "Anchor #overveiw not found in this page.",
+          "suggestion": null
+        },
+        {
+          "check": "links",
+          "rule": "undefined-reference",
+          "severity": "error",
+          "file": "guide.md",
+          "line": 27,
+          "message": "Reference link [nope] has no definition.",
+          "suggestion": null
+        }
+      ]
+    }
+  ],
+  "terminology_usage": {
+    "GitHub": {
+      "preferred": 0,
+      "variants": {
+        "Github": 1
+      }
+    },
+    "JavaScript": {
+      "preferred": 0,
+      "variants": {
+        "Javascript": 1
+      }
+    },
+    "Python": {
+      "preferred": 0,
+      "variants": {
+        "python": 1
+      }
+    },
+    "API": {
+      "preferred": 4,
+      "variants": {
+        "api": 1
+      }
+    },
+    "JSON": {
+      "preferred": 0,
+      "variants": {
+        "Json": 1
+      }
+    },
+    "email": {
+      "preferred": 0,
+      "variants": {
+        "e-mail": 1
+      }
+    },
+    "username": {
+      "preferred": 0,
+      "variants": {
+        "user name": 1
+      }
+    },
+    "sign in": {
+      "preferred": 0,
+      "variants": {
+        "log in": 1
+      }
+    }
+  },
+  "rewrites": [
+    {
+      "file": "README.md",
+      "line": 3,
+      "problems": [
+        "passive-voice: Possible passive voice: \"is used\".",
+        "wordy-phrase: Wordy phrase \"in order to\".",
+        "passive-voice: Possible passive voice: \"is hosted\".",
+        "weasel-word: Vague intensifier \"really\".",
+        "inconsistent-term: Use \"GitHub\" instead of \"Github\"."
+      ],
+      "original": "Acme Widgets is a library that is used by developers in order to build dashboards. It is really easy to get started and the project is hosted on Github.",
+      "rewrite": "Acme Widgets is a library that is used by developers to build dashboards. It is easy to get started and the project is hosted on GitHub.",
+      "model": "mock:mock",
+      "warnings": []
+    },
+    {
+      "file": "README.md",
+      "line": 7,
+      "problems": [
+        "long-sentence: Sentence has 37 words (limit 30).",
+        "passive-voice: Possible passive voice: \"be configured\".",
+        "passive-voice: Possible passive voice: \"is made\".",
+        "weasel-word: Vague intensifier \"very\".",
+        "wordy-phrase: Wordy phrase \"utilize\".",
+        "inconsistent-term: Use \"JavaScript\" instead of \"Javascript\".",
+        "inconsistent-term: Use \"Python\" instead of \"python\"."
+      ],
+      "original": "Install the package with pip. Then import it in your Javascript or python project and the API will be configured automatically for you when the first request is made by the client, which is very convenient for teams that utilize many environments.",
+      "rewrite": "Install the package with pip. Then import it in your JavaScript or Python project and the API will be configured automatically for you when the first request is made by the client, which is convenient for teams that use many environments.",
+      "model": "mock:mock",
+      "warnings": []
+    },
+    {
+      "file": "api.md",
+      "line": 5,
+      "problems": [
+        "inconsistent-term: Use \"API\" instead of \"api\".",
+        "inconsistent-term: Use \"JSON\" instead of \"Json\"."
+      ],
+      "original": "The Widgets api lets you create, list and delete widgets over HTTP using Json payloads.",
+      "rewrite": "The Widgets API lets you create, list and delete widgets over HTTP using JSON payloads.",
+      "model": "mock:mock",
+      "warnings": []
+    },
+    {
+      "file": "guide.md",
+      "line": 7,
+      "problems": [
+        "repeated-word: Repeated word \"the\".",
+        "passive-voice: Possible passive voice: \"are stored\".",
+        "inconsistent-term: Use \"email\" instead of \"e-mail\"."
+      ],
+      "original": "Welcome to the the guide. You can e-mail the team if you get stuck, and the API keys are stored in `config.json`.",
+      "rewrite": "Welcome to the the guide. You can email the team if you get stuck, and the API keys are stored in `config.json`.",
+      "model": "mock:mock",
+      "warnings": []
+    },
+    {
+      "file": "guide.md",
+      "line": 11,
+      "problems": [
+        "passive-voice: Possible passive voice: \"is generated\".",
+        "inconsistent-term: Use \"username\" instead of \"user name\".",
+        "inconsistent-term: Use \"sign in\" instead of \"log in\". Use \"sign in\" as the verb."
+      ],
+      "original": "First log in to your account, then create a user name. The token is generated by the server.",
+      "rewrite": "First sign in to your account, then create a username. The token is generated by the server.",
+      "model": "mock:mock",
+      "warnings": []
+    }
+  ]
+}
