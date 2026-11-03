@@ -13,6 +13,7 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
+ui = ["streamlit>=1.30"]
 
 [project.scripts]
 doccheck = "doctoolkit.cli:main"

@@ -61,6 +61,15 @@ Try it on `examples/docs`, which contains deliberate problems. The generated out
 
 Defaults can live in a `doccheck.json` file in the working directory. Its keys mirror the options, for example `{"ignore": ["drafts/*"], "disable": ["passive-voice"], "fail_under": 80}`.
 
+## Web interface (Streamlit)
+
+```bash
+pip install -e ".[ui]"
+streamlit run app.py
+```
+
+Upload Markdown files, paste text or load the sample docs. The app shows scores, filterable issues, terminology usage and AI rewrite suggestions side by side, and lets you download the reports. A provider API key entered in the sidebar is used only for that session.
+
 ## Customizing
 
 **Glossary.** The default glossary is in `doctoolkit/data/default_glossary.json`:
